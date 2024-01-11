@@ -1,0 +1,17 @@
+var a, a1, a2, a3, b: integer;
+var c, d: real;
+begin
+a :=100;
+while (a<1000) do begin 
+a3 := a div 100 mod 10;
+a2 := a div 10 mod 10;
+a1 := a mod 10;
+b := a3*a2*a1;
+c := sqrt(a3*10+a2);
+d := sqrt(a2*10+a3);
+if (b=c) or (b=d) then begin write (a); a:= a+1 
+end 
+else
+a:= a+1;
+end;
+end.
